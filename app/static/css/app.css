@@ -1,3 +1,70 @@
-body {
+{% extends 'base.html' %}
+
+{% block css %}
+
+body{
     padding-top: 5rem;
 }
+#bottom{
+  background: white;
+  height: 500px;
+  width: 400px;
+  border: 1px solid grey;
+}
+#top{
+  height: 50%;
+  background: green;
+  background-image: radial-gradient(circle, #d2edb8, #4da86b);
+}
+img{
+  max-height:50%;
+  max-width:50%;
+  border-radius:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+} 
+#name, div > p{
+  text-align: center;
+  margin: 0px; 
+  text-shadow: 1px 1px grey;
+}
+#name{
+  color: white;
+}
+div > p{
+  line-height: 110%;
+  font-size: 15px;
+  color: #f2f9ea;
+}
+
+#botext{
+  margin-top:10px; 
+  color:#d3d1cf;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+td{
+  padding-left:10px;
+  padding-right:10px;
+  color:grey;
+}
+#val > td{
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+button{
+  margin-top:30px;
+  color: white;
+  background-color:#54ea19;
+  border: none;
+  font-size: 15px;
+  padding: 8px 40px;
+  border-radius: 5px;
+}
+
+{% endblock%}

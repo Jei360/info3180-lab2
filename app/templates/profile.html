@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block main %}
+  <div id="bottom">
+    <div id="top">
+      <img src="{{ url_for('static', filename='Maario.svg')}}">
+      <h1 id="name">Name</h2>
+      <div>
+        <p>@username</p>
+        <p>Origin</p>
+        <p>Joined: {{value}}</p>
+      </div>
+    </div>
+    <div><p id="botext">This is a text about me.</p></div>
+    <table style= "padding-top:50px;">
+      <tr id="val">
+        <td>000</td><td>000</td><td>000</td>
+      </tr>
+      <tr><td>Posts</td>                 
+        <td>Following</td><td>Followers</td>
+      </tr>
+    </table>
+    <p><button type="button">Follow</button><p>
+  </div>
+{% endblock %}
